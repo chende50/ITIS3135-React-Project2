@@ -1,18 +1,16 @@
-import './index.css';
-import Footer from './Components/Common/Footer';
-import Header from './Components/Common/Header';
-import AuthProvider from './Components/LoginContext/LoginContext';
-import Login from './Components/Login/Login';
+import './App.css';
+import BlogPost from './Components/IndividualBlogPost/IndividualBlogPost';
+import BlogPostsPage from './Components/BlogPostPage/BlogPostPage';
 import { Routes, Route } from 'react-router';
-
 
 function App() {
   return (
-    <AuthProvider>
-      <Routes>
-        <Route path="/" element={<Login/>}/>
-      </Routes>
-    </AuthProvider>
-  )
+    <Routes>
+      <Route path='/' element={<BlogPostsPage/>} />
+      <Route path='/blogposts' element={<BlogPostsPage/>} />
+      <Route path='/blogposts/:post_id' element={<BlogPost/>} />
+    </Routes>
+  );
 }
-export default App
+
+export default App;

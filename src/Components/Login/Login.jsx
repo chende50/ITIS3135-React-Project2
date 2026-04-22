@@ -16,8 +16,6 @@ function Login(){
             return;
         }
         setLogin(true);
-        setUsername('');
-        setPassword('');
     }
 
     return(
@@ -25,13 +23,13 @@ function Login(){
             <Header/>
                 <h1>{loginStatus ? "Logged In" : "Logged Out"}</h1>
                 <form onSubmit={handleSubmit}>
-                    <label>Username</label>
+                    <label>Username </label>
                     <input 
                         required
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
                     ></input>
-                    <label>Password</label>
+                    <label>Password </label>
                     <input 
                         required
                         type='password'
