@@ -1,41 +1,45 @@
 import {useState} from 'react';
-import {useLogin} from '../LoginContext/LoginContext';
 import Header from '../Common/Header';
 import Footer from '../Common/Footer';
+import { useAuth } from '../Authorization/AuthContext'
 
 function Login(){
-    var {loginStatus, setLogin} = useLogin();
 
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const {login} = useAuth();
 
-    const handleSubmit = (e) => {
+    const [userData, setUserData] = useState({
+        username: '',
+        password: '',
+    });
+
+    const onSubmit = (e) => {
         e.preventDefault();
-        if(!username || !password){
-            alert("Please fill out field")
-            return;
-        }
-        setLogin(true);
+        console.log(userData);
+        login(userData.username)
     }
 
     return(
         <div>
             <Header/>
-                <h1>{loginStatus ? "Logged In" : "Logged Out"}</h1>
-                <form onSubmit={handleSubmit}>
+                <form 
+                    className='flex flex-col max-w-96 gap-2 mt-2 ml-3'
+                    onSubmit={onSubmit}>
                     <label>Username </label>
-                    <input 
+                    <input
+                        className='border-2' 
                         required
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                    ></input>
+                        value={userData.username}
+                        onChange={(e) => setUserData({...userData, username: e.target.value})}>
+                    </input>
                     <label>Password </label>
                     <input 
+                        className='border-2'
                         required
                         type='password'
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}></input>
-                    <button type='submit'>Log In</button>
+                        value={userData.password}
+                        onChange={(e) => setUserData({...userData, password: e.target.value})}>
+                    </input>
+                    <button className='bg-purple-950 text-white max-w-18 p-1 rounded-2xl hover:bg-purple-800' type='submit'>Log In</button>
                 </form>
             <Footer/>
         </div>
