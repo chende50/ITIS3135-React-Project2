@@ -17,12 +17,12 @@ function BlogPostsPage(){
     return (
         <div className='bg-white text-black min-h-screen' >
             <Header/>
-            <div className='flex flex-col gap-2'>
+            <div className='grid grid-cols-3 gap-2 col-span-1 mb-15'>
                 {postData.map(post =>(
                     <div key={post.id} className='border-2 rounded-2xl p-4 m-2'>
                         <h1 className='font-bold text-2xl'>{post.title}</h1>
-                        <p className='mb-4'>{post.body.substring(0,50)}</p>
-                        <Link to={`/blogposts/${post.id}`} className='bg-[#a94545] text-white rounded-sm p-2'>Read More</Link>
+                        <p className='mb-4'>{post.body.substring(0,100)}</p>
+                        <Link to={`/blogposts/${post.id}`} className='bg-purple-950 text-white rounded-sm p-2'>Read More</Link>
                     </div>
                 ))}               
             </div>
