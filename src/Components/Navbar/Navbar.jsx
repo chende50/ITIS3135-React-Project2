@@ -8,6 +8,9 @@ function Navbar(){
     return(
         <nav>
             <ul className='text-white flex flex-row justify-center items-center gap-5 md:gap-24 list-none p-5'>
+                <li>
+                    {username ? (<p>Hello, {username}</p>) : (<p>Hello, guest</p>)}
+                </li>
                 <li><Link to='/'>Homepage</Link></li>
                 <li><Link to='/blogposts'>Blog Posts</Link></li>
                 <li>

@@ -20,13 +20,13 @@ function LandingPage(){
                     <Link to={`/blogposts`} className='bg-purple-950 text-white rounded-sm p-2 animate-bounce'>Explore Blog</Link>
                 </div>
             </div>
-            <hr/>
+            <hr className='m-5'/>
             <h1 className = 'text-lg font-bold text-center'>About the Creators</h1>
             <div className='flex flex-col justify-center items-center gap-5 p-4 m-2 mx-auto px-4 md:flex-row'>
                 <Biography 
                     name='Cae Henderson' 
-                    image='' 
-                    content='' 
+                    image='src/assets/cae_picture.png' 
+                    content='Cae is an aspiring game developer who enjoys full stack development (but maybe front-end a little more!). They enjoy getting to use code to create things creative and visually appealing. Cae worked on the login functionality and blog post page, as well as assisted with styling.' 
                 />
                 <Biography 
                     name='Bee Acree' 
