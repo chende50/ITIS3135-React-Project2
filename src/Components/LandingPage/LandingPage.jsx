@@ -25,12 +25,12 @@ function LandingPage(){
             <div className='flex flex-col justify-center items-center gap-5 p-4 m-2 mx-auto px-4 md:flex-row'>
                 <Biography 
                     name='Cae Henderson' 
-                    image='src/assets/cae_picture.png' 
+                    image='/cae_picture.png' 
                     content='Cae is an aspiring game developer who enjoys full stack development (but maybe front-end a little more!). They enjoy getting to use code to create things creative and visually appealing. Cae worked on the login functionality and blog post page, as well as assisted with styling.' 
                 />
                 <Biography 
                     name='Bee Acree' 
-                    image='src/assets/bee_picture.png' 
+                    image='/bee_picture.png' 
                     content='Bee is an aspiring game developer who specializes in back-end development. She likes to find the fun in coding by trying new things. Bee created the home page of this website and assisted with styling.' 
                 />
             </div>
