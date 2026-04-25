@@ -38,70 +38,19 @@ function IndividualBlogPost(){
         <div className='bg-white min-h-screen'> 
             <Header/>
             {loading ? (
-                <div className='grid grid-cols-3 grid-rows-3'>
-                    <p className='text-center text-3xl font-bold animate-spin [animation-duration:.5s] p-20'>Loading...</p>
-                    <p className='text-center text-3xl font-bold animate-spin [animation-duration:1s] p-20'>Loading...</p>
-                    <p className='text-center text-3xl font-bold animate-spin [animation-duration:2s] p-20'>Loading...</p>
-                    
-                    <div class='container flex flex-row justify-center items-center text-center text-3xl font-bold p-20'>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_1ms]'>L</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_2ms]'>o</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_3ms]'>a</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_4ms]'>d</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_5ms]'>i</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_6ms]'>n</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_7ms]'>g</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_8ms]'>.</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_9ms]'>.</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_10ms]'>.</h3>
+                <div>
+                    <div className='container flex flex-row justify-center items-center text-center text-3xl font-bold p-20'>
+                        <h3 className = 'animate-[bounce_.5s_linear_infinite_-100ms]'>L</h3>
+                        <h3 className = 'animate-[bounce_.5s_linear_infinite_-200ms]'>o</h3>
+                        <h3 className = 'animate-[bounce_.5s_linear_infinite_-300ms]'>a</h3>
+                        <h3 className = 'animate-[bounce_.5s_linear_infinite_-400ms]'>d</h3>
+                        <h3 className = 'animate-[bounce_.5s_linear_infinite_-500ms]'>i</h3>
+                        <h3 className = 'animate-[bounce_.5s_linear_infinite_-600ms]'>n</h3>
+                        <h3 className = 'animate-[bounce_.5s_linear_infinite_-700ms]'>g</h3>
+                        <h3 className = 'animate-[bounce_.5s_linear_infinite_-800ms]'>.</h3>
+                        <h3 className = 'animate-[bounce_.5s_linear_infinite_-900ms]'>.</h3>
+                        <h3 className = 'animate-[bounce_.5s_linear_infinite_-1000ms]'>.</h3>
                     </div>
-                    <div class='container flex flex-row justify-center items-center text-center text-3xl font-bold p-20'>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_10ms]'>L</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_20ms]'>o</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_30ms]'>a</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_40ms]'>d</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_50ms]'>i</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_60ms]'>n</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_70ms]'>g</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_80ms]'>.</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_90ms]'>.</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_100ms]'>.</h3>
-                    </div>
-                    <div class='container flex flex-row justify-center items-center text-center text-3xl font-bold p-20'>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_100ms]'>L</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_200ms]'>o</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_300ms]'>a</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_400ms]'>d</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_500ms]'>i</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_600ms]'>n</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_700ms]'>g</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_800ms]'>.</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_900ms]'>.</h3>
-                        <h3 class = 'animate-[bounce_.5s_linear_infinite_1000ms]'>.</h3>
-                    </div>
-                    
-                    <div className='animate-spin'>
-                        <div className='animate-pulse'>
-                            <div className='animate-bounce'>
-                                <p className='text-center text-3xl font-bold animate-spin p-20'>Loading...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='animate-spin flex flex-col'>
-                        <div className='animate-pulse'>
-                            <div className='animate-bounce'>
-                                <p className='text-center text-3xl font-bold animate-spin p-20'>Loading...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='animate-spin flex flex-row'>
-                        <div className='animate-pulse'>
-                            <div className='animate-bounce'>
-                                <p className='text-center text-3xl font-bold animate-spin p-20'>Loading...</p>
-                            </div>
-                        </div>
-                    </div>
-
                     <Footer/>
                 </div>
             ) : (

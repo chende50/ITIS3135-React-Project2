@@ -30,8 +30,8 @@ function LandingPage(){
                 />
                 <Biography 
                     name='Bee Acree' 
-                    image='src/assets/bee_avatar.jpg' 
-                    content='Bee is an aspiring game developer who specializes in back-end development.' 
+                    image='src/assets/bee_picture.png' 
+                    content='Bee is an aspiring game developer who specializes in back-end development. She likes to find the fun in coding by trying new things. Bee created the home page of this website and assisted with styling.' 
                 />
             </div>
             <p className='text-center'>The "BK" in BK Blogs comes from our names, Bee and Cae!</p>
