@@ -8,7 +8,8 @@ function Navbar(){
     return(
         <nav>
             <ul className='text-white flex flex-row justify-center items-center gap-24 list-none p-5'>
-                <li><Link to='/'>Blog Posts</Link></li>
+                <li><Link to='/'>Homepage</Link></li>
+                <li><Link to='/blogposts'>Blog Posts</Link></li>
                 <li>
                     {username ? (<p onClick={logout}>Logout</p>) : (<Link to='/login'>Login</Link>)}
                 </li>
