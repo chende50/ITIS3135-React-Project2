@@ -7,7 +7,7 @@ function Navbar(){
 
     return(
         <nav>
-            <ul className='text-white flex flex-row justify-center items-center gap-24 list-none p-5'>
+            <ul className='text-white flex flex-row justify-center items-center gap-5 md:gap-24 list-none p-5'>
                 <li><Link to='/'>Homepage</Link></li>
                 <li><Link to='/blogposts'>Blog Posts</Link></li>
                 <li>

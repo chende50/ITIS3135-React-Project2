@@ -23,7 +23,7 @@ function Login(){
         <div>
             <Header/>
                 <form 
-                    className='flex flex-col max-w-96 gap-2 mt-2 ml-3'
+                    className='flex flex-col max-w-96 gap-2 mt-2 ml-3 border-2 rounded-2xl p-4 m-2'
                     onSubmit={onSubmit}>
                     <label>Username </label>
                     <input

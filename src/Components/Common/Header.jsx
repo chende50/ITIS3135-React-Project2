@@ -4,7 +4,7 @@ function Header(){
     return(
         <header className='bg-purple-950'>
             <div className='flex gap-8 justify-center items-center pt-2'>
-                <h1 className='text-white text-2xl'>BK Blogs</h1>
+                <img src='src/assets/BK_logo.png' className='max-w-25 max-h-25' />
             </div>
             <Navbar/>
         </header>

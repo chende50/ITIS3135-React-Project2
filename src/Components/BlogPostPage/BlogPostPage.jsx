@@ -17,7 +17,7 @@ function BlogPostsPage(){
     return (
         <div className='bg-white text-black min-h-screen' >
             <Header/>
-            <div className='grid grid-cols-3 gap-2 col-span-1 mb-15'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 col-span-1 mb-15'>
                 {postData.map(post =>(
                     <div key={post.id} className='border-2 rounded-2xl p-4 m-2'>
                         <h1 className='font-bold text-2xl'>{post.title}</h1>

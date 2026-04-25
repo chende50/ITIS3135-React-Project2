@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import Header from '../Common/Header'
 import Footer from '../Common/Footer'
+import Biography from './Biography';
 import { useUsername } from '../Authorization/AuthContext';
 
 function LandingPage(){
@@ -10,7 +11,7 @@ function LandingPage(){
         <div>
             <Header />
 
-            <div className = 'flex flex-col justify-center items-center gap-5 border-2 rounded-2xl p-4 m-2'>
+            <div className = 'flex flex-col justify-center items-center gap-5 border-2 rounded-2xl p-4 m-2 max-w-xl mx-auto px-4'>
                 {username ? (<h1 className = 'text-lg font-bold'>Hi {username}! Welcome to BK Blogs!</h1>) : (<h1 className = 'text-lg font-bold'>Welcome to BK Blogs!</h1>)}
                 <p className = 'max-w-lg'>This is your go-to site to see what the buzz is about! As a guest, you can view blog posts from many different bloggers. With an account, you can leave comments on blog posts as well as see other reader's comments.</p>
                 <p>Click below to log in or view blog posts.</p>
@@ -19,6 +20,21 @@ function LandingPage(){
                     <Link to={`/blogposts`} className='bg-purple-950 text-white rounded-sm p-2 animate-bounce'>Explore Blog</Link>
                 </div>
             </div>
+            <hr/>
+            <h1 className = 'text-lg font-bold text-center'>About the Creators</h1>
+            <div className='flex flex-col justify-center items-center gap-5 p-4 m-2 mx-auto px-4 md:flex-row'>
+                <Biography 
+                    name='Cae Henderson' 
+                    image='' 
+                    content='' 
+                />
+                <Biography 
+                    name='Bee Acree' 
+                    image='src/assets/bee_avatar.jpg' 
+                    content='Bee is an aspiring game developer who specializes in back-end development.' 
+                />
+            </div>
+            <p className='text-center'>The "BK" in BK Blogs comes from our names, Bee and Cae!</p>
     
             <Footer />
         </div>
